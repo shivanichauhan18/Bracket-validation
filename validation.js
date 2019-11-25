@@ -38,7 +38,7 @@ app.post("/new",(req,res)=>{
 
 })
 
-app.post("/new1",(req,res)=>{
+app.post("/validation",(req,res)=>{
     var brackets=req.body.bracket;
     let isMatchingBrackets = function (str) {
         let stack = [];
@@ -70,7 +70,7 @@ app.post("/new1",(req,res)=>{
     var data=isMatchingBrackets(brackets)
     res.send(data)
 
-    
+
     console.log(data);
 })
 
